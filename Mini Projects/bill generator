@@ -1,0 +1,18 @@
+print("===== BILL GENERATOR =====")
+
+item = input("Enter item name: ")
+price = float(input("Enter price of one item: "))
+quantity = int(input("Enter quantity: "))
+
+total = price * quantity
+gst = total * 0.18
+final_bill = total + gst
+
+print("\n----- BILL -----")
+print("Item:", item)
+print("Price:", price)
+print("Quantity:", quantity)
+print("Total:", total)
+print("GST (18%):", gst)
+print("Final Bill:", final_bill)
+print("----------------")
